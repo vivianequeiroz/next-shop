@@ -2,7 +2,6 @@ import { styled } from "..";
 
 export const HomeContainer = styled("main", {
   display: "flex",
-  gap: "3rem",
   maxWidth: "calc(100vw - ((100vw - 1100px)/2))",
   marginLeft: "auto",
   minHeight: 656,
@@ -16,7 +15,6 @@ export const Product = styled("a", {
   background: "linear-gradient(100deg, #8A2BE2 0%, #FF69B4 100%)",
   borderRadius: 8,
   cursor: "pointer",
-  padding: "0.25rem",
   position: "relative",
 
   img: {
