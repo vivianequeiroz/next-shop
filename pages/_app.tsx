@@ -12,13 +12,13 @@ function App({ Component, pageProps }: AppProps) {
     <Container>
       <Header>
         <Image
-          src={logoImg.src}
+          src={logoImg}
           alt="Next Shop T-shirt Icon with gradient of purple and pink"
           width={70}
           height={70}
         />
         <Image
-          src={storeNameImg.src}
+          src={storeNameImg}
           alt="Next Shop name with Font Space type"
           width={300}
           height={32}

@@ -1,11 +1,30 @@
-import { styled } from '../styles';
+import { HomeContainer, Product } from "@/styles/pages/home";
+import Image from "next/image";
 
-const Button = styled('button', {
-  backgroundColor: '$defaultPurple'
-})
+import shirt1 from "../assets/shirts/1.svg";
+import shirt2 from "../assets/shirts/2.svg";
+import shirt3 from "../assets/shirts/3.svg";
+import shirt4 from "../assets/shirts/4.svg";
 
 export default function Home() {
   return (
-    <Button>Send</Button>
-  )
+    <HomeContainer>
+      <Product>
+        <Image src={shirt1} alt="Shirt 1" width={520} height={480} />
+        <footer>
+          <strong>Shirt 1</strong>
+          <span>$ 69,99</span>
+        </footer>
+      </Product>
+      <Product>
+        <Image src={shirt2} alt="Shirt 2" width={520} height={480} />
+      </Product>
+      <Product>
+        <Image src={shirt3} alt="Shirt 3" width={520} height={480} />
+      </Product>
+      <Product>
+        <Image src={shirt4} alt="Shirt 4" width={520} height={480} />
+      </Product>
+    </HomeContainer>
+  );
 }
